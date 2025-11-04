@@ -1,0 +1,69 @@
+.card {
+  width: 80px; 
+  height: 50%;
+  flex: 0 1 calc(33.333% - 20px); /* 3 cards por linha */
+  margin: 10px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.avatar {
+  width: 40px;       
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.card-image {
+  width: 100%;
+
+  height: 20px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 10px 10px;
+}
+@media (max-width: 768px) {
+  .ad-banner {
+    width: 468px; 
+    height: 60px;
+  }
+}
+
+/* Telas menores que 480px */
+@media (max-width: 480px) {
+  .ad-banner {
+    width: 320px; 
+    height: 50px;
+  }
+}

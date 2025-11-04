@@ -1,0 +1,82 @@
+.bemVindo{
+  padding: 40px;
+  color: #fff;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+background-image: url('../../assets/fundocinzajpg.jpg');
+ margin-left: 20px;
+}
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; 
+  justify-content: center; 
+}
+
+
+.card {
+  flex: 0 1 calc(33.33% - 20px); 
+  box-sizing: border-box;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit:contain;
+}
+
+
+.card .avatar {
+  width: 40px;       
+  height: 40px;      
+  border-radius: 50%; 
+  object-fit: cover;  
+  margin-right: 10px; 
+}
+.card h2 {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .ad-banner {
+    width: 468px; 
+    height: 60px;
+  }
+}
+
+/* Telas menores que 480px */
+@media (max-width: 480px) {
+  .ad-banner {
+    width: 320px; 
+    height: 50px;
+  }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+
+.MenuCanto{
+  position: fixed;     
+  top: 0;
+  left: 0;
+  width: 200px;        
+  height: 100vh;     
+  background-color: #212529;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral ol {
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .ad-banner {
+    width: 468px; 
+    height: 60px;
+  }
+}
+
+/* Telas menores que 480px */
+@media (max-width: 480px) {
+  .ad-banner {
+    width: 320px; 
+    height: 50px;
+  }
+}
