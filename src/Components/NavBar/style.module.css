@@ -1,14 +1,17 @@
-@media (max-width: 768px) {
+.ad-banner {
+  width: 100%;
+  max-width: 468px; 
+  height: auto;     
+}
+
+@media (max-width: 1080px) {
   .ad-banner {
-    width: 468px; 
-    height: 60px;
+    max-width: 320px;
   }
 }
 
-/* Telas menores que 480px */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .ad-banner {
-    width: 320px; 
-    height: 50px;
+    max-width: 100%;
   }
 }

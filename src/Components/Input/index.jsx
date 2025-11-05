@@ -1,5 +1,5 @@
-import { ComponenteEstiloDoInput } from "./style";
-import { FaSpider } from "react-icons/fa";
+import { ComponenteEstiloDoInput } from "./style.jsx";
+
 
 
 export const InputGeneric  = ({informacaoParaUsuario, tipoDeInput}) => {
@@ -11,8 +11,6 @@ export const InputGeneric  = ({informacaoParaUsuario, tipoDeInput}) => {
         type={tipoDeInput}
          />
 
-
-         {tipoDeInput === "email" && <FaSpider />}
      </div>   
   )
 }

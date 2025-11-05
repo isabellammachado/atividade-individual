@@ -15,7 +15,7 @@ export function Card({ fotoPost, legenda, usuario, avatar }) {
       {fotoPost && <img className="card-image" src={fotoPost} alt={legenda|| "Sem legenda..."} />}
       
       <h2>{legenda || "Sem legenda"}</h2>
-      <p>Comentar <PiChatTextLight /> | Curtir <IoHeart /></p>
+      <p className= 'legenda' >Comentar <PiChatTextLight /> | Curtir <IoHeart /></p>
     </div>
   );
 }
